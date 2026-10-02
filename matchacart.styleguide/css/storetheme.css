@@ -1,0 +1,16 @@
+
+
+:root{
+	--color-offwhite: #f4f4f4;
+
+	--color-main-light:##C8DCC7;
+	--color-main-medium:#659063; 
+	--color-main-dark: #2C6038; 
+}
+
+
+body{
+	background-color:var(--color-offwhite);
+}
+
+
