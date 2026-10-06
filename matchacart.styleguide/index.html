@@ -20,9 +20,9 @@
 
 <body>
 	<header="navbar">
-		<div class="container display-flex">
+		<div class="container display-flex flex-align-center">
 			<div class="flex-none">
-				<h1>matchacart Styleguide</h1>
+				<h1>matchacart styleguide</h1>
 			</div>
 			<div class="flex-stretch"></div>
 			<nav class="flex-none nav">
@@ -35,7 +35,7 @@
 
 	<div class="container" id="tableofcontents">
 			<h2>Table of Contents</h2>
-			<div class="card">
+			<div class="card soft">
 				<nav class="nav">
 					<ul>
 						<li><a href="#typography">Typography</a></li>
@@ -43,11 +43,16 @@
 							<li><a href="#headings">Headings</a></li>
 							<li><a href="#paragraphs">Paragraphs</a></li>
 						</ul>
-						<li><a href="#paragraphs">Cards</a></li>
+						<li><a href="#color">Color</a></li>
 						<li><a href="#viewwindow">ViewWindow</a></li>
 						<li><a href="#navigations">Navigations</a></li>
 						<li><a href="#gridsystem">Grid System</a></li>
-						<li><a href="#flexsystem">Flex System</a></li>		
+						<li><a href="#figure">Figure</a></li>		
+						<li><a href="#forms">Forms</a></li>	
+						<ul>
+							<li><a href="#inputs">Input</li>
+						</ul>
+						<li><a href="#buttons">Buttons</a></li>	
 					</ul>
 				</nav>
 			</div>
@@ -56,14 +61,14 @@
 	<div class="container" id="typography">
 		<h2>Typography</h2>
 		<div class="card soft" id="headings">
-			<h3>Headings</h3>
-			<h1>Heading 1</h1>
-			<h2>Heading 2</h2>
-			<h3>Heading 3</h3>
-			<h4>Heading 4</h4>
+			<h3 class="h3-bold">Headings</h3>
+			<h1>Heading 01</h1>
+			<h2>Heading 02</h2>
+			<h3>Heading 03</h3>
+			<h4>Heading 04</h4>
 		</div>
 		<div class="card soft" id="paragraphs">
-			<h3>Paragraphs</h3>
+			<h3 class="h3-bold">Paragraphs</h3>
 			<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, earum nostrum ratione dolores placeat, eum minima sapiente, perferendis fugiat quis laboriosam assumenda dignissimos ducimus esse blanditiis nobis rem ea. Quod?</p>
 			<p>Delectus sequi optio cupiditate facilis quasi. Culpa perspiciatis hic rerum autem at exercitationem sunt fugiat porro temporibus aspernatur id, iure voluptatibus maiores, perferendis illum esse nihil et cumque! Harum, vitae.</p>
 			<p>In animi inventore soluta non iusto quae aut, delectus, nesciunt asperiores dolor quisquam deleniti, incidunt? A nihil officiis amet consequuntur tempore temporibus enim asperiores ipsa pariatur, quibusdam! Quam perferendis, cum!</p>
@@ -71,52 +76,55 @@
 	</div>
 
 
-	<div class="container">
+	<div class="container" id="color">
 		<div class="card soft">
-			<h3>Color</h3>
+			<h3 class="h3-bold">Color</h3>
+
 			<div class="grid gap">
-				<div class="col-xs-12 col-md-3">
+
+				<div class="col-xs-4 col-md-1">
 					<figure class="figure">
 						<div class="swatch bg-one">
 					</figure>
 						<p>Matcha Light<br>#C8DCC7</p>
 				</div>
 
-				<div class="col-xs-12 col-md-3">
+				<div class="col-xs-4 col-md-1">
 					<figure class="figure">
 						<div class="swatch bg-two">
 					</figure>
 						<p>Matcha Medium<br>#659063</p>
 				</div>
 
-				<div class="col-xs-12 col-md-3">
+				<div class="col-xs-4 col-md-1">
 					<figure class="figure">
 						<div class="swatch bg-three">
 					</figure>
-						<p>Matcha Dark<br>##2C6038</p>
+						<p>Matcha Dark<br>#2C6038</p>
 				</div>
 
-				<div class="col-xs-12 col-md-3">
+				<div class="col-xs-4 col-md-1">
 					<figure class="figure">
-						<div class="swatch bg-three">
+						<div class="swatch bg-four">
 					</figure>
 						<p>Matcha Extra Dark<br>#1A3921</p>
 				</div>
+
 			</div>
 		</div>
 	</div>
 
-	<div class="container">
+	<div class="container" id="viewwindow">
 		<h2>View Window</h2>
 	</div>
 		<div class="view-window" style="background-image: url('img/matcha_morning.png');">
 		</div>
 
-	<div class="container">
+	<div class="container" id="navigations">
 		<h2>Navigations</h2>
 
 		<div class="card soft">
-			<h3>Basic Nav</h3>
+			<h3 class="h3-bold">Basic Nav</h3>
 
 			<nav class="nav">
 				<ul>
@@ -131,8 +139,7 @@
 
 	<div class="container">
 		<div class="card soft">
-			<h3>Flex Nav</h3>
-
+			<h3 class="h3-bold">Flex Nav</h3>
 			<nav class="nav nav-flex">
 				<ul>
 					<li><a href="#">Link 1</a></li>
@@ -146,7 +153,7 @@
 
 	<div class="container">
 		<div class="card soft">
-			<h3>Stretch Nav</h3>
+			<h3 class="h3-bold">Stretch Nav</h3>
 			<nav class="nav nav-stretch">
 				<ul>
 					<li><a href="#">Link 1</a></li>
@@ -161,7 +168,7 @@
 
 	<div class="container">
 		<div class="card soft">
-			<h3>Pills Nav</h3>
+			<h3 class="h3-bold">Pills Nav</h3>
 
 			<nav class="nav nav-pills">
 				<ul>
@@ -176,7 +183,7 @@
 
 	<div class="container">
 		<div class="card soft">
-			<h3>Crumbs Nav</h3>
+			<h3 class="h3-bold">Crumbs Nav</h3>
 
 			<nav class="nav nav-crumbs">
 				<ul>
@@ -191,7 +198,8 @@
 	
 	<div class="container">
 		<div class="card soft">
-				<h3>Material Nav</h3>
+			<div> 
+				<h3 class="h3-bold">Material Nav</h3>
 
 				<nav class="nav nav-material">
 					<ul>
@@ -208,85 +216,418 @@
 
 
 	<div class="container">
-		<div class="card soft">
-				<h2>Grid System</h2>
-				<div class="grid">
-					<div class="col-6">column 6</div>
-					<div class="col-6">column 6</div>
-				</div>
+		<h2>Grid System</h2>
+			<div class="card soft">
+					<div class="grid">
+						<div class="col-6">column 6</div>
+						<div class="col-6">column 6</div>
+					</div>
 
-				<div class="grid">
-					<div class="col-4">column 4</div>
-					<div class="col-4">column 4</div>
-					<div class="col-4">column 4</div>
+					<div class="grid">
+						<div class="col-4">column 4</div>
+						<div class="col-4">column 4</div>
+						<div class="col-4">column 4</div>
 
-					<div class="col-3">column 3</div>
-					<div class="col-6">column 6</div>
-					<div class="col-3">column 3</div>
-				</div>
-		</div>
+						<div class="col-3">column 3</div>
+						<div class="col-6">column 6</div>
+						<div class="col-3">column 3</div>
+					</div>
+			</div>
 	</div>
 
 	<div class="container">
-		<div class="card soft">
-				<h2>Responsive Grid</h2>
-				<div class="grid">
-					<div class="col-xs-12 col-md-6">column 6</div>
-					<div class="col-xs-12 col-md-6">column 6</div>
-				</div>
+		<h2>Responsive Grid</h2>
+			<div class="card soft">
+					<div class="grid">
+						<div class="col-xs-12 col-md-6">column 6</div>
+						<div class="col-xs-12 col-md-6">column 6</div>
+					</div>
 
-				<div class="grid">
-					<div class="col-xs-12 col-md-4 xl-3">column 4</div>
-					<div class="col-xs-12 col-md-4 xl-3">column 4</div>
-					<div class="col-xs-12 col-md-4 xl-3">column 4</div>
-				</div>
-		</div>
-	</div>
-	
-
-	<div class="container">
-		<div class="card soft">
-			<h2>Flex System</h2>
-		</div>
+					<div class="grid">
+						<div class="col-xs-12 col-md-4 xl-3">column 4</div>
+						<div class="col-xs-12 col-md-4 xl-3">column 4</div>
+						<div class="col-xs-12 col-md-4 xl-3">column 4</div>
+					</div>
+			</div>
 	</div>
 
 
-<div class="container">
+<div class="container" id="figure">
+	<h2>Figure</h2>
+		<div class="card soft">
+				<h3 class="h3-bold">Basic Figure</h3>
+
+				<figure class="figure">
+					<img src="https://placehold.co/400x400?text=product" alt="Product">
+					<figcaption>Product</figcaption>
+				</figure>
+		</div>
+
+
+		<h3 class="h3-bold">Figure Grid</h3>
+
+				<div class="grid gap">
+					<div class="col-xs-12 col-md-4">
+						<figure class="figure">
+							<img src="https://placehold.co/400x400?text=product" alt="Product">
+							<figcaption>Product</figcaption>
+						</figure>
+					</div>
+
+					<div class="col-xs-12 col-md-4">
+						<figure class="figure">
+							<img src="https://placehold.co/400x400?text=product" alt="Product">
+							<figcaption>Product</figcaption>
+						</figure>
+					</div>
+
+
+					<div class="col-xs-12 col-md-4">
+						<figure class="figure">
+							<img src="https://placehold.co/400x400?text=product" alt="Product">
+							<figcaption>Product</figcaption>
+						</figure>
+					</div>
+				</div>
+
+		<h3 class="h3-bold">Product Grid</h3>
+				<div class="grid gap">
+					<div class="col-xs-12 col-md-4">
+						<figure class="figure product">
+							<img src="https://placehold.co/400x400?text=product" alt="Product">
+							<figcaption>
+								<div>Product Name</div>
+								<div>$3.99</div>
+							</figcaption>
+						</figure>
+					</div>
+
+					<div class="col-xs-12 col-md-4">
+						<figure class="figure product">
+							<img src="https://placehold.co/400x400?text=product" alt="Product">
+							<figcaption>
+								<div>Product Name</div>
+								<div>$3.99</div>
+							</figcaption>
+						</figure>
+					</div>
+
+					<div class="col-xs-12 col-md-4">
+						<figure class="figure product">
+							<img src="https://placehold.co/400x400?text=product" alt="Product">
+							<figcaption>
+								<div>Product Name</div>
+								<div>$3.99</div>
+							</figcaption>
+						</figure>
+					</div>
+				</div>	
+
+
+		<h3 class="h3-bold">Product Overlay</h3>
+				<div class="grid gap">
+					<div class="col-xs-12 col-md-4">
+						<figure class="figure product-overlay">
+							<img src="https://placehold.co/400x400?text=product" alt="Product">
+							<figcaption>
+								<div class="caption-body">
+									<div>Product Name</div>
+									<div>$3.99</div>
+								</div>
+							</figcaption>
+						</figure>
+					</div>
+
+					<div class="col-xs-12 col-md-4">
+						<figure class="figure product-overlay">
+							<img src="https://placehold.co/400x400?text=product" alt="Product">
+							<figcaption>
+								<div class="caption-body">
+									<div>Product Name</div>
+									<div>$3.99</div>
+								</div>
+							</figcaption>
+						</figure>
+					</div>
+
+					<div class="col-xs-12 col-md-4">
+						<figure class="figure product-overlay">
+							<img src="https://placehold.co/400x400?text=product" alt="Product">
+							<figcaption>
+								<div class="caption-body">
+									<div>Product Name</div>
+									<div>$3.99</div>
+								</div>
+							</figcaption>
+						</figure>
+					</div>
+
+
+</div>
+
+<div class="container" id="forms">
+	<h2>Forms & Inputs</h2>
+
 	<div class="card soft">
-		<h3>Basic Figure</h3>
+		<h3 class="h3-bold">Default Inputs</h3>
+		<form>
+			<input type="text"><br>
+			<input type="number"><br>
+			<input type="password"><br>
+			<input type="url"><br>
+			<input type="email"><br>
+			<input type="datetime-local"><br>
+			<input type="date"><br>
+			<input type="search"><br>
+		</form>
 
-		<figure class="figure">
-			<img src="https://placehold.co/400x400?text=product" alt="Product">
-			<figcaption>Product</figcaption>
-		</figure>
+		<h3 class="h3-bold">Form Input</h3>
+		<form>
+			<input type="text" placeholder="Text" class="form-input">
+			<input type="number" placeholder="Number" class="form-input">
+			<input type="password" placeholder="Password" class="form-input">
+			<input type="search" placeholder="Search" class="form-input">
+		</form>
 
-		<div class="grid gap">
-			<div class="col-xs-12 col-md-4">
-				<figure class="figure">
-					<img src="https://placehold.co/400x400?text=product" alt="Product">
-					<figcaption>Product</figcaption>
-				</figure>
+		<h3 class="h3-bold">Form Label</h3>
+		<form>
+			<label class="form-label">Example</label>
+			<input type="text" placeholder="Text" class="form-input">
+			<label class="form-label">Example</label>
+			<input type="number" placeholder="Number" class="form-input">
+			<label class="form-label">Example</label>
+			<input type="password" placeholder="Password" class="form-input">
+			<label class="form-label">Example</label>
+			<input type="search" placeholder="Search" class="form-input">
+		</form>
+
+		<h3 class="h3-bold">Form Control</h3>
+		<form>
+			<div class="form-control">
+				<label class="form-label">Example</label>
+				<input type="text" placeholder="Text" class="form-input">
 			</div>
 
-			<div class="col-xs-12 col-md-4">
-				<figure class="figure">
-					<img src="https://placehold.co/400x400?text=product" alt="Product">
-					<figcaption>Product</figcaption>
-				</figure>
+			<div class="form-control">
+				<label class="form-label">Example</label>
+				<input type="number" placeholder="Number" class="form-input">
 			</div>
 
-
-			<div class="col-xs-12 col-md-4">
-				<figure class="figure">
-					<img src="https://placehold.co/400x400?text=product" alt="Product">
-					<figcaption>Product</figcaption>
-				</figure>
+			<div class="form-control">
+				<label class="form-label">Example</label>
+				<input type="password" placeholder="Password" class="form-input">
 			</div>
-		</div>
+
+			<div class="form-control display-flex flex-align-center">
+				<div class="flex-none">
+					<label class="form-label">Example</label>	
+				</div>
+				<div class="flex-stretch">
+					<input type="search" placeholder="Search" class="form-input flex-stretch">
+				</div>
+				<div class="flex-none">
+					<label class="form-label">Example</label>	
+				</div>
+				<div class="flex-stretch">
+					<input type="search" placeholder="Search" class="form-input flex-stretch">
+				</div>
+			</div>
+		</form>
+</div>
+
+<h2>Buttons</h2>
+	<div class="container" id="buttons">
+			<div class="card soft">
+				<h3 class="h3-bold">Default Buttons</h3>
+				<button>Button</button>
+
+				<h3 class="h3-bold">Form Buttons</h3>
+				<button type="button" class="form-button">Button</button>
+				<input type="button" class="form-button" value="Input">
+				<a href="#" class="form-button">Anchor</a>
+			</div>
+	</div>			
+
+
+<div class="container" id="hotdog">
+	<h2>Hotdog</h2>
+	<div class="card soft">
+			<div class="form-control">
+				<form>
+					<input type="search" class="hotdog" placeholder="Search">
+				</form>
+			</div>
+
+			<div class="form-control">
+				<form>
+					<input type="search" class="hotdog dark" placeholder="Search">
+				</form>
+			</div>
+
+			<div class="form-control">
+				<form class="card dark">
+					<input type="search" class="hotdog light" placeholder="Search">
+				</form>
+			</div>
+
+			<div class="form-control">
+				<form class="hotdog">
+					<span>&equiv;</span>
+					<input type="search" placeholder="Search">
+				</form>
+			</div>
+
+			<div class="form-control">
+				<form class="hotdog">
+					<input type="search" placeholder="Search">
+					<span>&equiv;</span>
+				</form>
+			</div>
 	</div>
 </div>
 
+	<h2 id="select">Select</h2>
+			<div class="card soft">
+				<div class="form-select">
+					<select>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+					</select>
+				</div>
 
+				<div class="display-flex">
+					<div class="flex-stretch"></div>
+						<div class="flex-none">
+							<div class="form-select">
+								<select>
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			<h2 id="checkboxes">Check Boxes</h2>
+		<div class="card soft">
+			<h3 class="h3-bold">Basic Checkbox</h3>
+					<label>Label<input type="checkbox" id="input-1"></label>
+					<label for="input-1">Label</label>
+
+			<h3 class="h3-bold">Heart Checkbox</h3>
+				<div class="favorite">
+					<input type="checkbox" id="heart-example" class="hidden"> 
+					<label for="heart-example">&hearts;</label>
+				</div>
+
+			<h3 class="h3-bold">Toggle</h3>
+			<div class="toggle">
+				<input type="checkbox" id="toggle-1" class="hidden"> 
+				<label for="toggle-1"></label>
+			</div>
+
+			<div class="display-flex flex-align-center">
+				<div class="flex-none">
+					<label for="toggle-2" class="form-label">Display Warning?</label>
+				</div>
+
+				<div class="flex-stretch"></div>
+
+				<div class="flex-none">
+					<div class="toggle" style="font-size:2em;">
+						<input type="checkbox" id="toggle-2" class="hidden"> 
+						<label for="toggle-2"></label>
+					</div>	
+				</div>
+			</div>
+		</div>
+
+		<h2>Product Card</h2>
+			<div class="grid">
+					<div class="product-card">
+						<div class="product-image">
+							<img src="https://placehold.co/400x400?text=product">
+						</div>
+
+						<div class="progress"><div class="progress-bar"></div></div>
+
+						<div class="row">
+							<span>240</span>
+							<span>4.7</span>
+						</div>
+
+						<h2 class="product-title">Product Name</h2>
+						<h3 class="product-price">$20.99</h3>
+
+						<div class="row actions">
+							<div class="flex-none">
+								<button class="btn-primary">Add to Bag</button>
+							</div>
+							<div class="flex-stretch"></div>
+							<div class="flex-none">
+								<button class="btn-icon" aria-label="Save">♡</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="product-card">
+						<div class="product-image">
+							<img src="https://placehold.co/400x400?text=product">
+						</div>
+
+						<div class="progress"><div class="progress-bar"></div></div>
+
+						<div class="row">
+							<span>240</span>
+							<span>4.7</span>
+						</div>
+
+						<h2 class="product-title">Product Name</h2>
+						<h3 class="product-price">$20.99</h3>
+
+						<div class="row actions">
+							<div class="flex-none">
+								<button class="btn-primary">Add to Bag</button>
+							</div>
+							<div class="flex-stretch"></div>
+							<div class="flex-none">
+								<button class="btn-icon" aria-label="Save">♡</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="product-card">
+						<div class="product-image">
+							<img src="https://placehold.co/400x400?text=product">
+						</div>
+
+						<div class="progress"><div class="progress-bar"></div></div>
+
+						<div class="row">
+							<span>240</span>
+							<span>4.7</span>
+						</div>
+
+						<h2 class="product-title">Product Name</h2>
+						<h3 class="product-price">$20.99</h3>
+
+						<div class="row actions">
+							<div class="flex-none">
+								<button class="btn-primary">Add to Bag</button>
+							</div>
+							<div class="flex-stretch"></div>
+							<div class="flex-none">
+								<button class="btn-icon" aria-label="Save">♡</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 </body>
 </html>
 
