@@ -19,10 +19,10 @@
 	<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
 <body>
-	<header="navbar">
+	<header class="navbar">
 		<div class="container display-flex flex-align-center">
 			<div class="flex-none">
-				<h1>matchacart styleguide</h1>
+				<h2 class="h2-light">matchacart styleguide</h2>
 			</div>
 			<div class="flex-stretch"></div>
 			<nav class="flex-none nav">
@@ -44,15 +44,19 @@
 							<li><a href="#paragraphs">Paragraphs</a></li>
 						</ul>
 						<li><a href="#color">Color</a></li>
-						<li><a href="#viewwindow">ViewWindow</a></li>
+						<li><a href="#viewwindow">View Window</a></li>
 						<li><a href="#navigations">Navigations</a></li>
 						<li><a href="#gridsystem">Grid System</a></li>
+						<li><a href="#responsivegrid">Responsive Grid</a></li>
+						<li><a href="#card">Card</a></li>
+						<li><a href="#tables">Tables</a></li>
 						<li><a href="#figure">Figure</a></li>		
-						<li><a href="#forms">Forms</a></li>	
-						<ul>
-							<li><a href="#inputs">Input</li>
-						</ul>
+						<li><a href="#formsandinputs">Forms & Inputs</a></li>	
 						<li><a href="#buttons">Buttons</a></li>	
+						<li><a href="#hotdog">Hotdog</a></li>	
+						<li><a href="#select">Select</a></li>	
+						<li><a href="#checkboxes">Checkboxes</a></li>	
+						<li><a href="#productcard">Product Card</a></li>	
 					</ul>
 				</nav>
 			</div>
@@ -62,25 +66,30 @@
 		<h2>Typography</h2>
 		<div class="card soft" id="headings">
 			<h3 class="h3-bold">Headings</h3>
-			<h1>Heading 01</h1>
-			<h2>Heading 02</h2>
-			<h3>Heading 03</h3>
-			<h4>Heading 04</h4>
+			<h1>Ceremonial Grade 01</h1>
+			<h2>Ceremonial Grade 02</h2>
+			<h3>Ceremonial Grade 03</h3>
+			<h4>Ceremonial Grade 04</h4>
 		</div>
 		<div class="card soft" id="paragraphs">
 			<h3 class="h3-bold">Paragraphs</h3>
-			<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, earum nostrum ratione dolores placeat, eum minima sapiente, perferendis fugiat quis laboriosam assumenda dignissimos ducimus esse blanditiis nobis rem ea. Quod?</p>
-			<p>Delectus sequi optio cupiditate facilis quasi. Culpa perspiciatis hic rerum autem at exercitationem sunt fugiat porro temporibus aspernatur id, iure voluptatibus maiores, perferendis illum esse nihil et cumque! Harum, vitae.</p>
-			<p>In animi inventore soluta non iusto quae aut, delectus, nesciunt asperiores dolor quisquam deleniti, incidunt? A nihil officiis amet consequuntur tempore temporibus enim asperiores ipsa pariatur, quibusdam! Quam perferendis, cum!</p>
+			<p>We exist to honor matcha as a craft — grown with care, stone-ground with patience, and brought to you in its many forms. From ceremonial-grade powders meant to be whisked and savored slowly, to culinary grades suited for baking and creation, our selection reflects a deep respect for tradition alongside room for everyday exploration.</p>
+			<p>We source directly from Japan's most storied growing regions, preserving the distinct character each terroir imparts, and offer thoughtfully composed gift boxes for those who wish to share this ritual with others. Every product we carry is chosen not for convenience alone, but for the quiet craftsmanship behind it — because matcha, done right, is never rushed.</p>
 		</div>
 	</div>
 
 
 	<div class="container" id="color">
-		<div class="card soft">
+			<div class="card soft">
 			<h3 class="h3-bold">Color</h3>
-
 			<div class="grid gap">
+
+				<div class="col-xs-4 col-md-1">
+					<figure class="figure">
+						<div class="swatch bg-zero">
+					</figure>
+						<p>Matcha Base<br>#66BD2B</p>
+				</div>
 
 				<div class="col-xs-4 col-md-1">
 					<figure class="figure">
@@ -128,10 +137,10 @@
 
 			<nav class="nav">
 				<ul>
-					<li><a href="#">Link 1</a></li>
-					<li><a href="#">Link 2</a></li>
-					<li><a href="#">Link 3</a></li>
-					<li><a href="#">Link 4</a></li>
+					<li><a href="#">Shop</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Rewards</a></li>
+					<li><a href="#">Cart</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -142,10 +151,10 @@
 			<h3 class="h3-bold">Flex Nav</h3>
 			<nav class="nav nav-flex">
 				<ul>
-					<li><a href="#">Link 1</a></li>
-					<li><a href="#">Link 2</a></li>
-					<li><a href="#">Link 3</a></li>
-					<li><a href="#">Link 4</a></li>
+					<li><a href="#">Shop</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Rewards</a></li>
+					<li><a href="#">Cart</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -156,10 +165,10 @@
 			<h3 class="h3-bold">Stretch Nav</h3>
 			<nav class="nav nav-stretch">
 				<ul>
-					<li><a href="#">Link 1</a></li>
-					<li><a href="#">Link 2</a></li>
-					<li><a href="#">Link 3</a></li>
-					<li><a href="#">Link 4</a></li>
+					<li><a href="#">Shop</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Rewards</a></li>
+					<li><a href="#">Cart</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -172,10 +181,10 @@
 
 			<nav class="nav nav-pills">
 				<ul>
-					<li><a href="#">Link 1</a></li>
-					<li><a href="#">Link 2</a></li>
-					<li><a href="#">Link 3</a></li>
-					<li><a href="#">Link 4</a></li>
+					<li><a href="#">Shop</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Rewards</a></li>
+					<li><a href="#">Cart</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -187,10 +196,10 @@
 
 			<nav class="nav nav-crumbs">
 				<ul>
-					<li><a href="#">Link 1</a></li>
-					<li><a href="#">Link 2</a></li>
-					<li><a href="#">Link 3</a></li>
-					<li><a href="#">Link 4</a></li>
+					<li><a href="#">Shop</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Rewards</a></li>
+					<li><a href="#">Cart</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -203,10 +212,10 @@
 
 				<nav class="nav nav-material">
 					<ul>
-						<li><a href="#">Link 1</a></li>
-						<li><a href="#">Link 2</a></li>
-						<li><a href="#">Link 3</a></li>
-						<li><a href="#">Link 4</a></li>
+						<li><a href="#">Shop</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Rewards</a></li>
+						<li><a href="#">Cart</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -214,8 +223,7 @@
 	</div>
 		
 
-
-	<div class="container">
+	<div class="container" id="gridsystem">
 		<h2>Grid System</h2>
 			<div class="card soft">
 					<div class="grid">
@@ -235,7 +243,7 @@
 			</div>
 	</div>
 
-	<div class="container">
+	<div class="container" id="responsivegrid">
 		<h2>Responsive Grid</h2>
 			<div class="card soft">
 					<div class="grid">
@@ -249,6 +257,92 @@
 						<div class="col-xs-12 col-md-4 xl-3">column 4</div>
 					</div>
 			</div>
+	</div>
+
+	<div class="container" id="card">
+		<h2>Card</h2>
+			<div class="grid gap">
+				<div class="col-xs-6 col-md-3">
+					<div class="card soft">Card Soft</div>
+				</div>
+					<div class="col-xs-6 col-md-3">
+						<div class="card border">Card Border</div>
+					</div>
+
+					<div class="col-xs-6 col-md-3">
+						<div class="card light">Card Light</div>
+					</div>
+
+					<div class="col-xs-6 col-md-3">
+						<div class="card medium">Card Medium</div>
+					</div>
+
+				</div>	
+			</div>
+	</div>
+
+
+	<script>
+	const makeTable = (classes='') => {
+		const head = ['#','Product','Price','Quantity','Total']; 
+		const body = [
+			['Matcha Whisk',"$23.00",'2','$46.00'], 
+			['Matcha Bake',"$39.00",'1','$39.00'], 
+			['Matcha Gift Set',"$45.00",'3','$135.00'],  
+			['Matcha Ceremonial',"49.00",'1','$49.00'], 
+			['Matcha Limited',"$38.00",'1','$38.00'], 
+		]; 
+
+		// Let ran = Math.floor(Math.random()*Links.Length);
+		document.write(`
+		<table class="${classes}">
+			<thead><tr>${head.reduce((r,o)=>r+`<th>${o}</th>`,'')}</tr></thead>
+			<tbody>${body.reduce((r,o,i)=>r+ 
+				`<tr>${
+					[i+1,...o].reduce((r,o)=>r+`<td>${o}</td>`,'')
+				}</tr>`,'')
+			}</tbody> 
+		</table>
+		`); 
+	}			
+	</script>
+
+	<div class="container" id="tables">
+		<h2>Tables</h2>
+		<div class="card soft">
+			<h3 class="h3-bold">Basic Table</h3>
+			<script>makeTable("table")</script>
+		</div>
+
+		<div class="card soft">
+			<h3 class="h3-bold">Striped Table</h3>
+			<script>makeTable("table striped")</script>
+		</div>
+
+		<div class="card soft">
+			<h3 class="h3-bold">Striped Lined Vertical</h3>
+			<script>makeTable("table lined vertical")</script>
+		</div>
+
+		<div class="card soft">
+			<h3 class="h3-bold">Striped Lined Horizontal</h3>
+			<script>makeTable("table lined horizontal")</script>
+		</div>
+
+		<div class="card soft">
+			<h3 class="h3-bold">Striped Lined Border</h3>
+			<script>makeTable("table lined border")</script>
+		</div>
+
+		<div class="card soft">
+			<h3 class="h3-bold">Striped Lined All</h3>
+			<script>makeTable("table lined all")</script>
+		</div>
+
+		<div class="card soft">
+			<h3 class="h3-bold">Combinations</h3>
+			<script>makeTable("table lined vertical border striped")</script>
+		</div>
 	</div>
 
 
@@ -365,7 +459,7 @@
 
 </div>
 
-<div class="container" id="forms">
+<div class="container" id="formsandinputs">
 	<h2>Forms & Inputs</h2>
 
 	<div class="card soft">
@@ -435,8 +529,8 @@
 		</form>
 </div>
 
-<h2>Buttons</h2>
-	<div class="container" id="buttons">
+<div class="container" id="buttons">
+		<h2>Buttons</h2>
 			<div class="card soft">
 				<h3 class="h3-bold">Default Buttons</h3>
 				<button>Button</button>
@@ -446,7 +540,7 @@
 				<input type="button" class="form-button" value="Input">
 				<a href="#" class="form-button">Anchor</a>
 			</div>
-	</div>			
+</div>			
 
 
 <div class="container" id="hotdog">
@@ -486,34 +580,39 @@
 	</div>
 </div>
 
-	<h2 id="select">Select</h2>
-			<div class="card soft">
-				<div class="form-select">
-					<select>
-						<option>1</option>
-						<option>2</option>
-						<option>3</option>
-						<option>4</option>
-					</select>
-				</div>
+<div class="container" id="select">
+	<h2>Select</h2>
+		<div class="card soft">
+			<div class="form-select">
+				<select>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+				</select>
+			</div>
 
-				<div class="display-flex">
-					<div class="flex-stretch"></div>
-						<div class="flex-none">
-							<div class="form-select">
-								<select>
-									<option>1</option>
-									<option>2</option>
-									<option>3</option>
-									<option>4</option>
-								</select>
-							</div>
+			<div class="display-flex">
+				<div class="flex-stretch"></div>
+					<div class="flex-none">
+						<div class="form-select">
+							<select>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+							</select>
 						</div>
 					</div>
 				</div>
+			</div>
+		</div>
+</div>
 
-			<h2 id="checkboxes">Check Boxes</h2>
-		<div class="card soft">
+<div class="container" id="checkboxes">
+		<h2>Check Boxes</h2>
+		<div>
+			<div class="card soft">
 			<h3 class="h3-bold">Basic Checkbox</h3>
 					<label>Label<input type="checkbox" id="input-1"></label>
 					<label for="input-1">Label</label>
@@ -545,9 +644,11 @@
 				</div>
 			</div>
 		</div>
-
-		<h2>Product Card</h2>
-			<div class="grid">
+</div>
+	
+<div class="container" id="productcard">	
+	<h2>Product Card</h2>
+			<div class="product-grid">
 					<div class="product-card">
 						<div class="product-image">
 							<img src="https://placehold.co/400x400?text=product">
@@ -625,9 +726,35 @@
 							</div>
 						</div>
 					</div>
-				</div>
+
+					<div class="product-card">
+						<div class="product-image">
+							<img src="https://placehold.co/400x400?text=product">
+						</div>
+
+						<div class="progress"><div class="progress-bar"></div></div>
+
+						<div class="row">
+							<span>240</span>
+							<span>4.7</span>
+						</div>
+
+						<h2 class="product-title">Product Name</h2>
+						<h3 class="product-price">$20.99</h3>
+
+						<div class="row actions">
+							<div class="flex-none">
+								<button class="btn-primary">Add to Bag</button>
+							</div>
+							<div class="flex-stretch"></div>
+							<div class="flex-none">
+								<button class="btn-icon" aria-label="Save">♡</button>
+							</div>
+						</div>
+					</div>
 			</div>
-		</div>
+	</div>
+</div>
 </body>
 </html>
 
