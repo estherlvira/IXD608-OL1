@@ -1,0 +1,23 @@
+[
+    {
+        "name": "Tori Kelly",
+        "type": "student",
+        "email": "tori@gmail.com",
+        "classes": ["WNM608", "WNM627"]
+    }, 
+
+    {
+        "name": "James Henry",
+        "type": "teacher",
+        "email": "james@gmail.com",
+        "classes": ["WNM665", "WNM617"]
+    }, 
+
+    {
+        "name": "Emma Watson",
+        "type": "student",
+        "email": "emma@gmail.com",
+        "classes": ["WNM608", "WNM617"]
+    }
+
+]
