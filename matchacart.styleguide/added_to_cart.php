@@ -5,7 +5,7 @@ include "admin/function.php";
 $id       = isset($_POST['id']) ? intval($_POST['id']) : 0;
 $quantity = isset($_POST['quantity']) ? intval($_POST['quantity']) : 1;
 
-// Make sure the product exists
+
 $result = makeQuery(makeConn(), "SELECT * FROM `products` WHERE `id` = $id");
 if (empty($result) || $quantity < 1) {
 	header("Location: product_list.php");
@@ -13,13 +13,12 @@ if (empty($result) || $quantity < 1) {
 }
 $product = $result[0];
 
-// Add to the cart (stored in the session)
 if (!isset($_SESSION['cart'])) $_SESSION['cart'] = [];
 
 if (isset($_SESSION['cart'][$id])) {
-	$_SESSION['cart'][$id] += $quantity;   // already in cart: add more
+	$_SESSION['cart'][$id] += $quantity;   
 } else {
-	$_SESSION['cart'][$id] = $quantity;    // new item
+	$_SESSION['cart'][$id] = $quantity;   
 }
 ?>
 <!DOCTYPE html>
