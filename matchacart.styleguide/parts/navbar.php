@@ -15,7 +15,7 @@
 					<li><a href="index.php">HOME</a></li>
 					<li><a href="product_list.php">SHOP</a></li>
 					<li><a href="">REWARDS</a></li>
-					<li><a href="">CART</a></li>
+					<li><a href="cart-checkout.php">CART</a></li>
 				</ul>
 			</nav>
 		</div>

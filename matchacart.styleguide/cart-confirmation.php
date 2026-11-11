@@ -12,6 +12,11 @@
 
 <div class="container">
 	<div class="card">
+		<h3 class="h3-bold">Thank you for your purchase!</h3>
+
+		<a href="product_list.php" class="form-button">Continue Shopping</a>
+
+	<div class="card">
 		<h3 class="h3-bold">Order</h3>
 		<p>Delivery Address: 1234 Lorem Ipsum</p>
 
@@ -52,7 +57,8 @@
 			</div>
 		</div>
 
-	<?php include "parts/footer.php"; ?> 
 
 	</div>
+
+	<?php include "parts/footer.php"; ?> 
 </div>

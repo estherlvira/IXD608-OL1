@@ -11,6 +11,7 @@
 	<div class="container">
 		<div class="card">
 				<h2>Cart</h2>
+				<h2>You added ___ to your cart</h2>
 				<div class="order-item">
 					<div class="profile-small"></div>
 

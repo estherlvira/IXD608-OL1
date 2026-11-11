@@ -1,67 +1,58 @@
+<?php
+include "admin/function.php";
+
+$id = isset($_GET['id']) ? intval($_GET['id']) : 0;
+
+$result = makeQuery(makeConn(), "SELECT * FROM `products` WHERE `id` = $id");
+
+
+$product = $result[0];
+$price = number_format($product->price, 2);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Product List</title>
-
-	<?php include "parts/meta.php"; ?> 
+	<title><?= $product->name ?> | matchacart.</title>
+	<?php include "parts/meta.php"; ?>
 </head>
 <body>
-	<?php include "parts/navbar.php"; ?> 
-	<?php include "parts/products.php"; ?> 
+	<?php include "parts/navbar.php"; ?>
 
-<?php
-include "parts/products.php";
+	<div class="container">
+		<div class="product-detail">
 
-$id = $_GET['id'] ?? 1;
-
-$product = null;
-foreach ($products as $p) {
-	if ($p['id'] == $id) {
-		$product = $p;
-		break;
-	}
-}
-
-if ($product === null) {
-	$product = $products[0];
-}
-?>
-
-<div class="container">
-	<div class="product-detail">
-
-		<div class="product-detail-image"></div>
-
-		<div class="product-detail-info">
-			<div class="category-tags">
-				<a href="#" class="category-tag">CATEGORY 1</a>
-				<a href="#" class="category-tag">CATEGORY 2</a>
+			<div class="product-detail-image">
+				<img src="img/<?= $product->thumbnail ?>" alt="<?= $product->name ?>">
 			</div>
 
-			<h3 class="product-detail-name"><?= $product['name'] ?></h3>
-			<p class="product-detail-price">$<?= number_format($product['price'], 2) ?></p>
-			<p class="product-detail-desc"><?= $product['description'] ?></p>
-			<div class="form-select">
-				<select>
-					<option>1</option>
-					<option>2</option>
-					<option>3</option>
-					<option>4</option>
-				</select>
+			<div class="product-detail-info">
+				<div class="category-tags">
+					<span class="category-tag"><?= $product->category ?></span>
+				</div>
+
+				<h2><?= $product->name ?></h2>
+				<p class="product-price">$<?= $price ?></p>
+				<p><?= $product->description ?></p>
+
+				<form method="post" action="added_to_cart.php">
+					<input type="hidden" name="id" value="<?= $product->id ?>">
+
+					<select name="quantity">
+						<?php for ($i = 1; $i <= 10; $i++): ?>
+							<option value="<?= $i ?>"><?= $i ?></option>
+						<?php endfor; ?>
+					</select>
+
+					<p>15% off! Use code LABORWEEK at checkout</p>
+
+					<button type="submit" class="btn-primary">Add to Bag</button>
+				</form>
 			</div>
 
-			<p class="product-detail-promo">15% off! Use code LABORWEEK at checkout</p>
-
-
-			<a href="cart-checkout.php" class="form-button">Add to Bag</a>
 		</div>
-
 	</div>
 
-	<?php include "parts/footer.php"; ?> 
-</div>
-
-
+	<?php include "parts/footer.php"; ?>
 </body>
 </html>
