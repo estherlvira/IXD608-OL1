@@ -1,3 +1,10 @@
+<?php
+
+include_once "admin/function.php"; 
+
+?> 
+
+
 <header class="navbar">
 	<div class="container navbar-inner">
 		<h2 class="h2-light navbar-logo">matchacart.</h2>
@@ -13,9 +20,15 @@
 			<nav class="nav">
 				<ul>
 					<li><a href="index.php">HOME</a></li>
-					<li><a href="product_list.php">SHOP</a></li>
-					<li><a href="">REWARDS</a></li>
-					<li><a href="cart-checkout.php">CART</a></li>
+					<li><a href="product_list.php">SHOP</a></li>t
+
+					<li><a href="cart-checkout.php" class="nav-cart">
+						CART
+						<span class="cart-badge" id="cart-count"><?= makeCartBadge() ?></span>
+					<li></a>
+
+					
+					</a></li>
 				</ul>
 			</nav>
 		</div>

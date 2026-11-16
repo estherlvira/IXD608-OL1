@@ -1,6 +1,6 @@
 <?php
-include "admin/function.php";
-include "parts/product_cards.php";
+include_once "admin/function.php";
+include_once "parts/product_cards.php";
 
 $result = makeQuery(makeConn(), "SELECT * FROM `products`");
 ?>
